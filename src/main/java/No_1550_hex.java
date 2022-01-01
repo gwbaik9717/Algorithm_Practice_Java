@@ -1,5 +1,6 @@
 import java.util.*;
 
+/* 뻘짓이다.
 public class No_1550_hex {
     public static int toInt(char n){
         if (n<58)
@@ -15,5 +16,13 @@ public class No_1550_hex {
             total += toInt(n.charAt(i)) * Math.pow(16, n.length()-1-i);
         }
         System.out.println(total);
+    }
+} */
+
+public class No_1550_hex{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String n = sc.next();
+        System.out.println(Integer.parseInt(n, 16));
     }
 }
