@@ -20,6 +20,8 @@ public class No_3029_terror {
         }
 
 
+
+
         int hour;
         int min;
         int sec;
@@ -56,6 +58,10 @@ public class No_3029_terror {
         }else
             hour = futureInt[0] - currentInt[0];
 
-        System.out.println(String.format("%02d", hour) + ":" + String.format("%02d", min) + ":" + String.format("%02d", sec));
+
+        if(currentInt[0] == futureInt[0] && currentInt[1] == futureInt[1] && currentInt[2] == futureInt[2]){
+            System.out.println("24:00:00");
+        }else
+            System.out.println(String.format("%02d", hour) + ":" + String.format("%02d", min) + ":" + String.format("%02d", sec));
     }
 }
